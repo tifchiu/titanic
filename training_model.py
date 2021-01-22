@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from IPython.display import clear_output
 from six.moves import urllib
 
 import tensorflow.compat.v2.feature_column as fc
@@ -50,7 +49,7 @@ result = linear_est.evaluate(eval_input_fn) #get model metrics by testing on tes
 
 # note that tensorflow models are built to make predictions on large datasets. They are not great at making predictions on one piece of datum
 result = list(linear_est.predict(eval_input_fn))
-clear_output()
+
 print("--------------------------------------------------------------------------------------------------------------")
 print('Data was collected on 625 passengers on the RMS Titanic. Give a number n to see information on the passenger, \ntheir likelihood of survival given this information, and whether or not they survived.')
 print("--------------------------------------------------------------------------------------------------------------")
