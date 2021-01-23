@@ -19,5 +19,5 @@ python training_model.py
 ```
 3. Enter a value
 ![image](prompt.png)
-4. View statistics  
+4. View statistics; the linear estimator predicts a chance of survival given the various features of the specific data point.
 ![image](output.png)
